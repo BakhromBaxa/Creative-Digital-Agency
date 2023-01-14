@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.nav-link{
+    color: #000;
+    background-color: transparent;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+table.thello {
+    width: 100%;
+}
+
+td.thello {
+    border: 20px solid rgb(255, 255, 255);
+    width: 50%;
+}
+
+.entry-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hello {
+    font-size: 60px;
+}
+
+table.twork {
+    border: 1px solid;
+    width: 100%;
+}
+td.twork {
+    border: 20px solid;
+    height: 400px;
+}
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .heading-text {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .heading-text span {
+    font-weight: 100;
+  }
+  
+  
+  .image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .image-gallery2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .image-gallery .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .image-gallery2 .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .image-item img {
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .image-gallery {
+      flex-direction: row;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .image-gallery2 {
+      flex-direction: row;
+    }
+  }
+  
+  .image-item {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 57, 57, 0.502);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-gallery {
+    background-color: #eee;
+    width: auto;
+    height: 800px;
+    overflow-y: scroll;
+  }
+
+  .image-gallery2 {
+    background-color: #eee;
+    width: auto;
+    height: auto;
+    overflow-y: scroll;
+  }
+  
+  .image-gallery::-webkit-scrollbar {
+      display: none;
+  }
+
+  .image-gallery2::-webkit-scrollbar {
+    display: none;
+}
+  
+  .image-gallery {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .image-gallery2 {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .show_more {
+    text-align: center;
+    padding: 80px;
+  }
+
+  .about-us {
+    position: relative;
+    bottom: -100px;
+  }
+
+  .about-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .about-item > li {
+    flex-basis: 400px;
+    position: relative;
+  }
+
+  .about-item li img{
+    object-fit: cover;
+    max-width: 100%;
+    height: 500px;
+    vertical-align: middle;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .our-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .our-item > li{
+    flex-basis: 400px;
+    position: relative;
+  }
+
+  .our-item li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 300px;
+    vertical-align: middle;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #d1d407;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #dfd442;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contact-item {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .icon {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 40px;
+  }
+
+  .icon-item {
+    background-color: yellow;
+    height: 65px;
+    width: 65px;
+    border-radius: 10px;
+  }
+
+  .social-icon {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
